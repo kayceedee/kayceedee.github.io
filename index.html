@@ -12,7 +12,7 @@
       <button type="button" id="tofractions">Fractions</button>
       <button type="button" id="toflashcards">Flashcards</button>
     </div>
-    <p id="title">Helpful things.</p>
+    <p id="maintitle" class="title">Helpful things.</p>
     <p id="author">Made by James Dawson</p>
     <div class="space">
 
@@ -20,12 +20,16 @@
     <button type="button" id="randomnum" class="totop">To mainpage</button>
     <div class="randomnumfunc">
       <div class="randomminmax">
-        <input type="text" placeholder="Min">
-        <input type="text" placeholder="Max">
+        <input type="text" placeholder="Min" id="min">
+        <input type="text" placeholder="Max" id="max">
       </div>
-      <div class="randomnumout">
-        <p></p>
+      <div class="randomnumdisplaydiv">
+        <p id="randomnumdisplay">Generated numbers will appear here.</p>
       </div>
+    </div>
+    <button type="button" id="genrandomnum">Generate</button>
+    <div id="randomtitle" class="title">
+      <p>Random Number Generator</p>
     </div>
     <div class="space">
 
