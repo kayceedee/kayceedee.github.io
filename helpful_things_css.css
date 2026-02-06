@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-grow: 1;
   height: 15vh;
+  min-height: 2em;
   width: 15vw;
   border-radius: 25px;
   border-style: outset;
@@ -30,15 +31,20 @@ body {
   justify-content: center;
 }
 
-#title {
+.title {
   display: flex;
   justify-content: center;
+}
+
+#maintitle {
   font-size: 10vw;
 }
 
 .totop {
   display: flex;
   border-radius: 25px;
+  min-height: 2em;
+  height: 5vh;
   width: 100vw;
   border-style: outset;
   justify-content: center;
@@ -51,17 +57,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12vh;
-  width: 20vw;
+  height: 15vh;
+  width: 50vw;
   border-radius: 30px;
   border-style: outset;
   flex-wrap: wrap;
 }
 
 .randomminmax * {
-  width: 85%;
+  width: 90%;
 }
 
-.randomnumfunc {
+.randomnumdisplaydiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 50vw;
+  border-radius: 30px;
+  border-style: outset;
+  flex-wrap: wrap;
+}
 
+
+.randomnumfunc {
+  display: flex;
+  width: 100vw;
+  min-height: 4em;
+}
+
+#genrandomnum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4em;
+  width: 100vw;
+  height: 10vh;
+  border-radius: 30px;
+  border-style: outset;
+  flex-wrap: wrap;
+}
+
+#randomtitle {
+  font-size: 5vw;
 }
