@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let genrandomnum = document.getElementById("genrandomnum")
 
   genrandomnum.addEventListener("click", () => {
-    randomnumdisplay.innerHTML = (Math.floor(Math.random() * (randomnummax.value - randomnummin.value) + randomnummin.value))
+    randomnumdisplay.innerHTML = (Math.floor(Math.random() * (Math.floor(randomnummax.value) - Math.floor(randomnummin.value)) + Math.floor(randomnummin.value)))
   })
 
 })
+
