@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script src="helpful_things_js.js"></script>
-    <link rel="stylesheet" href="helpful_things_css.css">
+    <script src="file:///C:/Users/super/Documents/JamesCoding/helpful_things_js.js"></script>
+    <link rel="stylesheet" href="file:///C:/Users/super/Documents/JamesCoding/helpful_things_css.css">
     <meta charset="utf-8">
     <title>Helpful Things</title>
   </head>
   <body>
     <div class="linksto">
       <button type="button" id="torandomnum">Random Number Generator</button>
-      <button type="button" id="tofractions">Fractions</button>
+      <button type="button" id="tofractions">Fraction simplifier</button>
       <button type="button" id="toflashcards">Flashcards</button>
     </div>
     <p id="maintitle" class="title">Helpful things.</p>
@@ -19,9 +19,9 @@
     </div>
     <button type="button" id="randomnum" class="totop">To mainpage</button>
     <div class="randomnumfunc">
-      <div class="randomminmax">
-        <input type="text" placeholder="Min" id="min">
-        <input type="text" placeholder="Max" id="max">
+      <div class="randommin">
+        <input type="text" placeholder="Min" id="min" class="input">
+        <input type="text" placeholder="Max" id="max" class="input">
       </div>
       <div class="randomnumdisplaydiv">
         <p id="randomnumdisplay">Generated numbers will appear here.</p>
@@ -35,7 +35,19 @@
 
     </div>
     <button type="button" id="fractions" class="totop">To mainpage</button>
-    <p>Fractions</p>
+    <div class="fractionsfunc">
+      <div class="fractionsin">
+        <input type="text" placeholder="Numerator" id="numerator" class="input">
+        <input type="text" placeholder="Denominator" id="denominator" class="input">
+      </div>
+      <div class="fractionsdisplaydiv">
+        <p id="fractionsdisplay">Simplified fractions will appear here.</p>
+      </div>
+    </div>
+    <button type="button" id="simplify">Simplify</button>
+    <div id="fractiontitle" class="title">
+      <p>Fraction simplifier</p>
+    </div>
     <div class="space">
 
     </div>
