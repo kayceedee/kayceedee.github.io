@@ -4,6 +4,10 @@ body {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+.input {
+  text-align: center;
+}
+
 .linksto {
   display: flex;
   justify-content: space-between;
@@ -51,9 +55,9 @@ body {
   align-items: center;
 }
 
-/* Random Number generator */
+/* Random Number generator + fraction simplifier */
 
-.randomminmax {
+.randommin, .fractionsin {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,11 +68,11 @@ body {
   flex-wrap: wrap;
 }
 
-.randomminmax * {
+.randommin *, .fractionsin * {
   width: 90%;
 }
 
-.randomnumdisplaydiv {
+.randomnumdisplaydiv, .fractionsdisplaydiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,13 +84,13 @@ body {
 }
 
 
-.randomnumfunc {
+.randomnumfunc, .fractionsfunc {
   display: flex;
   width: 100vw;
   min-height: 4em;
 }
 
-#genrandomnum {
+#genrandomnum, #simplify {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,5 +103,11 @@ body {
 }
 
 #randomtitle {
-  font-size: 5vw;
+  font-size: 6vw;
+}
+
+/* Fraction simplifier */
+
+#fractiontitle {
+  font-size: 7vw;
 }
