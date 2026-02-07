@@ -53,8 +53,36 @@ document.addEventListener("DOMContentLoaded", () => {
   let genrandomnum = document.getElementById("genrandomnum")
 
   genrandomnum.addEventListener("click", () => {
-    randomnumdisplay.innerHTML = (Math.floor(Math.random() * (Math.floor(randomnummax.value) - Math.floor(randomnummin.value)) + Math.floor(randomnummin.value)))
+    randomnumdisplay.innerHTML = (Math.floor(Math.random() * (Number(randomnummax.value) - Number(randomnummin.value)) + Number(randomnummin.value)))
   })
 
+  // FRACTION SIMPLFIER FUNCTIONALITY
+
+  let fractionsdisplay = document.getElementById("fractionsdisplay")
+  let numerator = document.getElementById("numerator")
+  let denominator = document.getElementById("denominator")
+  let simpfraction = document.getElementById("simplify")
+
+  simpfraction.addEventListener("click", () => {
+    function findgcf(num, den) {
+      if (den) {
+        return findgcf(den, num%den)
+      } else {
+        return num
+      }
+    }
+
+    let gcf = findgcf(Number(numerator.value), Number(denominator.value))
+
+    let simpnum = Number(numerator.value) / gcf
+    let simpden = Number(denominator.value) / gcf
+
+    fractionsdisplay.innerHTML = `${simpnum}/${simpden}`
+  })
+
+  // FLASHCARD FUNCTIONALITY
+
+  
 })
+
 
